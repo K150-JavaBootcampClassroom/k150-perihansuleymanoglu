@@ -1,15 +1,11 @@
 public class Company extends Customer{
-    private String companyName;
+    private int taxNumber;
 
-    public Company(String companyName) {
-        this.companyName = companyName;
+    public int getTaxNumber() {
+        return taxNumber;
     }
 
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setTaxNumber(int taxNumber) {
+        this.taxNumber = taxNumber;
     }
 }

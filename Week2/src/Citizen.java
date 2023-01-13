@@ -1,15 +1,30 @@
+import java.util.Date;
+
 public class Citizen extends Customer{
-    private String name;
-
-    public Citizen(String name) {
-        this.name = name;
+    private int TCKN;
+    private String surname;
+    private Date birthDate;
+    public int getTCKN() {
+        return TCKN;
     }
 
-    public String getName() {
-        return name;
+    public void setTCKN(int TCKN) {
+        this.TCKN = TCKN;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 }

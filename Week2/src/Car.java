@@ -1,21 +1,23 @@
-public abstract class Car {
+public class Car {
     private String brand;
     private String color;
     private int age;
 
     private int baggageCapacity;
-    private int dailyPrice;
-    private int monthlyPrice;
 
-    public Car(){
+    private CarType carType;
+    private RentInfo rentInfo;
 
-    };
+    public Car(CarType carType, RentInfo rentInfo) {
+        this.carType = carType;
+        this.rentInfo = rentInfo;
+    }
 
-    public String getBrandName() {
+    public String getBrand() {
         return brand;
     }
 
-    public void setBrandName(String brand) {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
 
@@ -23,16 +25,16 @@ public abstract class Car {
         return color;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public int getAge() {
         return age;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public int getBaggageCapacity() {
@@ -43,20 +45,19 @@ public abstract class Car {
         this.baggageCapacity = baggageCapacity;
     }
 
-    public int getDailyPrice() {
-        return dailyPrice;
+    public CarType getCarType() {
+        return carType;
     }
 
-    public void setDailyPrice(int dailyPrice) {
-        this.dailyPrice = dailyPrice;
+    public void setCarType(CarType carType) {
+        this.carType = carType;
     }
 
-    public int getMonthlyPrice() {
-        return dailyPrice;
+    public RentInfo getRentInfo() {
+        return rentInfo;
     }
 
-    public void setMonthlyPrice(int monthlyPrice) {
-        this.monthlyPrice = monthlyPrice;
+    public void setRentInfo(RentInfo rentInfo) {
+        this.rentInfo = rentInfo;
     }
-
 }

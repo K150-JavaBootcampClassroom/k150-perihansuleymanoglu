@@ -1,17 +1,11 @@
 public class Customer {
 
     private int id;
+    private String nationalty;
+    private String name;
     private String mail;
     private String password;
-    private int number;
-
-    public Customer() {
-    }
-
-    public Customer(String mail, String password) {
-        this.mail = mail;
-        this.password = password;
-    }
+    private int phone;
 
     public int getId() {
         return id;
@@ -19,6 +13,22 @@ public class Customer {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNationalty() {
+        return nationalty;
+    }
+
+    public void setNationalty(String nationalty) {
+        this.nationalty = nationalty;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getMail() {
@@ -37,11 +47,11 @@ public class Customer {
         this.password = password;
     }
 
-    public int getNumber() {
-        return number;
+    public int getPhone() {
+        return phone;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 }
