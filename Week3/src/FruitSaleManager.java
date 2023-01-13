@@ -9,7 +9,7 @@ public class FruitSaleManager implements IFruitSaleStrategy{
     @Override
     public void add(Fruit fruit, double kg) {
         fruit.setUnitStock(fruit.getUnitStock()+ kg);
-        System.out.println("Stok " + fruit.getFruitType().getValue() + " güncellendi: " + fruit.getUnitStock());
+        System.out.println("Stokta " + fruit.getFruitType().getValue() + " güncellendi: " + fruit.getUnitStock());
 
     }
 
